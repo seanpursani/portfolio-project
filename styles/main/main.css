@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #5e747f;
+}
+
+.long-shadow {
+  text-shadow: 0px 0px #51646d, 1px 1px #51646d, 2px 2px #51646d, 3px 3px #51646d, 4px 4px #51646d, 5px 5px #51646d, 6px 6px #51646d, 7px 7px #51646d, 8px 8px #51646d, 9px 9px #51646d, 10px 10px #51646d, 11px 11px #51646d, 12px 12px #51646d, 13px 13px #51646d, 14px 14px #51646d, 15px 15px #51646d, 16px 16px #51646d, 17px 17px #51646d, 18px 18px #51646d, 19px 19px #51646d, 20px 20px #51646d, 21px 21px #51646d, 22px 22px #51646d, 23px 23px #51646d, 24px 24px #51646d, 25px 25px #51646d, 26px 26px #51646d, 27px 27px #51646d, 28px 28px #51646d, 29px 29px #51646d, 30px 30px #51646d, 31px 31px #51646d, 32px 32px #51646d, 33px 33px #51646d, 34px 34px #51646d, 35px 35px #51646d, 36px 36px #51646d, 37px 37px #51646d, 38px 38px #51646d, 39px 39px #51646d, 40px 40px #51646d, 41px 41px #51646d, 42px 42px #51646d, 43px 43px #51646d, 44px 44px #51646d, 45px 45px #51646d, 46px 46px #51646d, 47px 47px #51646d, 48px 48px #51646d, 49px 49px #51646d, 50px 50px #51646d, 51px 51px #51646d, 52px 52px #51646d, 53px 53px #51646d, 54px 54px #51646d, 55px 55px #51646d, 56px 56px #51646d, 57px 57px #51646d, 58px 58px #51646d, 59px 59px #51646d, 60px 60px #51646d, 61px 61px #51646d, 62px 62px #51646d, 63px 63px #51646d, 64px 64px #51646d, 65px 65px #51646d, 66px 66px #51646d, 67px 67px #51646d, 68px 68px #51646d, 69px 69px #51646d, 70px 70px #51646d, 71px 71px #51646d, 72px 72px #51646d, 73px 73px #51646d, 74px 74px #51646d, 75px 75px #51646d, 76px 76px #51646d, 77px 77px #51646d, 78px 78px #51646d, 79px 79px #51646d, 80px 80px #51646d, 81px 81px #51646d, 82px 82px #51646d, 83px 83px #51646d, 84px 84px #51646d, 85px 85px #51646d, 86px 86px #51646d, 87px 87px #51646d, 88px 88px #51646d, 89px 89px #51646d, 90px 90px #51646d, 91px 91px #51646d, 92px 92px #51646d, 93px 93px #51646d, 94px 94px #51646d, 95px 95px #51646d, 96px 96px #51646d, 97px 97px #51646d, 98px 98px #51646d, 99px 99px #51646d, 100px 100px #51646d, 101px 101px #51646d, 102px 102px #51646d, 103px 103px #51646d, 104px 104px #51646d, 105px 105px #51646d, 106px 106px #51646d, 107px 107px #51646d, 108px 108px #51646d, 109px 109px #51646d, 110px 110px #51646d, 111px 111px #51646d, 112px 112px #51646d, 113px 113px #51646d, 114px 114px #51646d, 115px 115px #51646d, 116px 116px #51646d, 117px 117px #51646d, 118px 118px #51646d, 119px 119px #51646d, 120px 120px #51646d, 121px 121px #51646d, 122px 122px #51646d, 123px 123px #51646d, 124px 124px #51646d, 125px 125px #51646d, 126px 126px #51646d, 127px 127px #51646d, 128px 128px #51646d, 129px 129px #51646d, 130px 130px #51646d, 131px 131px #51646d, 132px 132px #51646d, 133px 133px #51646d, 134px 134px #51646d, 135px 135px #51646d, 136px 136px #51646d, 137px 137px #51646d, 138px 138px #51646d, 139px 139px #51646d, 140px 140px #51646d, 141px 141px #51646d, 142px 142px #51646d, 143px 143px #51646d, 144px 144px #51646d, 145px 145px #51646d, 146px 146px #51646d, 147px 147px #51646d, 148px 148px #51646d, 149px 149px #51646d, 150px 150px #51646d, 151px 151px #51646d, 152px 152px #51646d, 153px 153px #51646d, 154px 154px #51646d, 155px 155px #51646d, 156px 156px #51646d, 157px 157px #51646d, 158px 158px #51646d, 159px 159px #51646d, 160px 160px #51646d, 161px 161px #51646d, 162px 162px #51646d, 163px 163px #51646d, 164px 164px #51646d, 165px 165px #51646d, 166px 166px #51646d, 167px 167px #51646d, 168px 168px #51646d, 169px 169px #51646d, 170px 170px #51646d, 171px 171px #51646d, 172px 172px #51646d, 173px 173px #51646d, 174px 174px #51646d, 175px 175px #51646d, 176px 176px #51646d, 177px 177px #51646d, 178px 178px #51646d, 179px 179px #51646d, 180px 180px #51646d, 181px 181px #51646d, 182px 182px #51646d, 183px 183px #51646d, 184px 184px #51646d, 185px 185px #51646d, 186px 186px #51646d, 187px 187px #51646d, 188px 188px #51646d, 189px 189px #51646d, 190px 190px #51646d, 191px 191px #51646d, 192px 192px #51646d, 193px 193px #51646d, 194px 194px #51646d, 195px 195px #51646d, 196px 196px #51646d, 197px 197px #51646d, 198px 198px #51646d, 199px 199px #51646d, 200px 200px #51646d;
+  background: #5e747f;
+  color: #dbdbdb;
+  overflow: hidden;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #071013;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 13px;
+}
+
+.header {
+  border-bottom: 8px solid #071013;
+  display: inline-block;
+  border-radius: 30%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #dbdbdb;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 16px;
+  margin: 40px 30px 0px;
+}
+
+.navlink {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #dbdbdb;
+}
+
+.navlink:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #b8b7b7;
+}
+
+.navlink:visited {
+  text-decoration: none;
+}
+
+.hero {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 80px;
+  height: 100px;
+  color: #dbdbdb;
+}
+
+.hero h2 {
+  font-size: 60px;
+  color: #071013;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #071013;
+  margin: 16px 10px 16px 10px;
+}
+
+.hero button {
+  color: #071013;
+  background-color: #dbdbdb;
+  font-size: 18px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 6px 15px;
+  margin-top: 10px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1.5fr;
+      grid-template-rows: 2fr 1.5fr;
+  gap: 10px;
+  margin: 20px 20px;
+}
+
+.feature-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#071013), to(rgba(21, 28, 39, 0)));
+  background-image: linear-gradient(180deg, #071013, rgba(21, 28, 39, 0));
+  border-radius: 2px;
+  min-height: 250px;
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.feature-info {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(rgba(21, 28, 39, 0)));
+  background-image: linear-gradient(180deg, #dbdbdb, rgba(21, 28, 39, 0));
+  border-radius: 2px;
+  min-height: 250px;
+  padding: 20px 20px;
+  text-align: left;
+}
+
+h3,
+p {
+  color: #071013;
+  margin: 14px 0;
+}
+
+.feature-footer {
+  margin: 14px 0;
+}
+
+.feature-skill-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+  background-color: #46565e;
+  color: #dbdbdb;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 0px;
+}
+
+.feature-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-links-wrapper a {
+  text-decoration: none;
+  color: #071013;
+}
+/*# sourceMappingURL=main.css.map */
