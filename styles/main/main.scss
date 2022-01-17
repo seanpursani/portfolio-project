@@ -72,11 +72,11 @@
 }
 
 .feature-img {
-  @include tile-spec($secondary);
+  @include tile-img($secondary);
 }
 
 .feature-info {
-  @include tile-spec($primary);
+  @include tile-info($primary);
 }
 
 h3,
@@ -101,7 +101,7 @@ p {
   margin: 10px 10px 10px 0px;
 }
 
-.feature-skill {
+.feature-skills {
   display: flex;
   align-items: center;
 }
@@ -118,3 +118,10 @@ p {
 }
 
 // Tile
+
+.tile-wrapper {
+
+  .tile {
+    height: 20vh;
+  }
+}

@@ -130,9 +130,10 @@ body {
 }
 
 .feature-info {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(rgba(21, 28, 39, 0)));
-  background-image: linear-gradient(180deg, #dbdbdb, rgba(21, 28, 39, 0));
-  border-radius: 2px;
+  background-color: #dbdbdb;
+  -webkit-box-shadow: -2px 6px 8px #46565e;
+          box-shadow: -2px 6px 8px #46565e;
+  border-radius: 1px;
   min-height: 250px;
   padding: 20px 20px;
   text-align: left;
@@ -167,7 +168,7 @@ p {
   margin: 10px 10px 10px 0px;
 }
 
-.feature-skill {
+.feature-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,5 +190,9 @@ p {
 .feature-links-wrapper a {
   text-decoration: none;
   color: #071013;
+}
+
+.tile-wrapper .tile {
+  height: 20vh;
 }
 /*# sourceMappingURL=main.css.map */
