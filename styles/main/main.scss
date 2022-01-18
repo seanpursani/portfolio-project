@@ -72,6 +72,12 @@
 
 // Feature
 
+#feature-color {
+  margin: 0;
+  padding: 0;
+  background-color: $splash;
+}
+
 .feature {
   display: flex;
   flex-direction: column;
@@ -132,7 +138,6 @@
 .tile {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2vh;
   height: auto;
 }
 
@@ -144,7 +149,6 @@
     grid-template-columns: 1fr 1fr;
     height: 60vh;
     gap: 2vh;
-    margin-bottom: 0;
   }
 
   .feature {

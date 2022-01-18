@@ -132,6 +132,12 @@ body {
   margin-bottom: 10vh;
 }
 
+#feature-color {
+  margin: 0;
+  padding: 0;
+  background-color: #e3d0d8;
+}
+
 .feature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,7 +232,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 2vh;
   height: auto;
 }
 
@@ -238,7 +243,6 @@ body {
         grid-template-columns: 1fr 1fr;
     height: 60vh;
     gap: 2vh;
-    margin-bottom: 0;
   }
   .feature {
     display: -ms-grid;
