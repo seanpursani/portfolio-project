@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   background-color: #5e747f;
+  width: 96%;
+  margin: 2em auto;
 }
 
 .long-shadow {
@@ -44,11 +48,11 @@ body {
       -ms-flex-pack: right;
           justify-content: right;
   gap: 16px;
-  margin: 40px 30px 0px;
+  margin: 20px 20px;
 }
 
 .navlink {
-  font-size: 24px;
+  font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
   color: #dbdbdb;
@@ -66,6 +70,7 @@ body {
 
 .hero {
   height: 75vh;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,11 +81,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 80px;
+  font-size: 85px;
   height: 100px;
   color: #dbdbdb;
 }
@@ -114,10 +122,9 @@ body {
 .feature-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 2fr 1.5fr;
-      grid-template-rows: 2fr 1.5fr;
-  gap: 10px;
-  margin: 20px 20px;
+  -ms-grid-rows: 2fr 0.5fr;
+      grid-template-rows: 2fr 0.5fr;
+  padding: 10px;
 }
 
 .feature-img {
