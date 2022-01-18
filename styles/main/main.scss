@@ -9,11 +9,11 @@
   display: flex;
   justify-content: right;
   gap: 16px;
-  margin: 40px 30px 0px;
+  margin: 20px 20px;
 }
 
 .navlink {
-  font-size: 24px;
+  font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
   color: $primary;
@@ -31,13 +31,15 @@
 // Hero
 .hero {
   height: 75vh;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 
   h1 {
-    font-size: 80px;
+    font-size: 85px;
     height: 100px;
     color: $primary;
   }
@@ -58,17 +60,24 @@
   }
 }
 
+// Portfolio Header
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
 // Feature
 
 .feature {
-  text-align: center;
-}
-
-.feature-wrapper {
   display: grid;
-  grid-template-rows: 2fr 1.5fr;
-  gap: 10px;
-  margin: 20px 20px;
+  grid-template-rows: 2fr 1fr;
+  height: 100vh;
+  padding: 10px;
+  margin-bottom: 20vh;
 }
 
 .feature-img {
@@ -77,19 +86,24 @@
 
 .feature-info {
   @include tile-info($primary);
-}
 
-h3,
-p {
-  color: $secondary;
-  margin: 14px 0;
+  h3,
+  p {
+    color: $secondary;
+    margin: 14px 0;
+  }
 }
 
 .feature-footer {
   margin: 14px 0;
 }
 
-.feature-skill-wrapper {
+.feature-skills-container {
+  display: flex;
+  align-items: center;
+}
+
+.feature-skill-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,17 +115,12 @@ p {
   margin: 10px 10px 10px 0px;
 }
 
-.feature-skills {
-  display: flex;
-  align-items: center;
-}
-
-.feature-links-wrapper {
+.feature-links-container {
   display: flex;
   gap: 6px;
   align-items: center;
 
-  a {
+  .feature-link {
     text-decoration: none;
     color: $secondary;
   }
@@ -119,9 +128,6 @@ p {
 
 // Tile
 
-.tile-wrapper {
-
-  .tile {
-    height: 20vh;
-  }
+.tile {
+  margin-bottom: 2vh;
 }
