@@ -13,14 +13,6 @@
     margin: 2em auto;
   }
   
-  // Shadow Effect
-  .long-shadow {
-    @include longshadow(darken($background, 6%));
-    background: $background;
-    color: $primary;
-    overflow: hidden;
-  }
-  
   //Icons
   .icons {
     display: flex;
