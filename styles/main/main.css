@@ -243,7 +243,7 @@ body {
   .hero h1 {
     height: 1.2em;
   }
-  .feature-info h3 {
+  #feature-desktop-header {
     margin-bottom: 2em;
     font-size: 2em;
   }
@@ -262,6 +262,9 @@ body {
         grid-template-columns: 1fr 1fr;
     height: 70vh;
     font-size: larger;
+  }
+  .feature-skill-box {
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=main.css.map */

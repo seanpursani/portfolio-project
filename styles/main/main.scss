@@ -1,7 +1,7 @@
 // Imports
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "../partials/_colors";
 @import "../partials/_variables";
-@import "../partials/_typography";
 @import "../partials/_global";
 
 // Navbar
@@ -151,26 +151,31 @@ button,
   }
 }
 
-.feature-info {
-  h3 {
-    margin-bottom: 2em;
-    font-size: 2em;
-  }
+#feature-desktop-header {
+  margin-bottom: 2em;
+  font-size: 2em;
 }
-  
-  .tile-grid {
-    display: grid;
-    font-size: large;
-    grid-template-columns: 1fr 1fr;
-    gap: 2vh;
-  }
 
-  .feature {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 70vh;
-    font-size: larger;
-  }
+  
+.tile-grid {
+  display: grid;
+  font-size: large;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vh;
+}
+
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70vh;
+  font-size: larger;
+}
+
+.feature-skill-box {
+  font-size: 0.8em;
+}
+
 }
 
 
