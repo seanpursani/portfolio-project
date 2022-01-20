@@ -139,6 +139,31 @@
   flex-direction: column;
 }
 
+//Footer
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4em;
+}
+
+.footer-container {
+  border-radius: 0.2em;
+  gap: 1em;
+  color: $primary;
+  background-color: $secondary;
+  width: 70vw;
+  padding: 1em;
+  font-size: 0.75em;
+}
+
+.footer-img {
+  width: 64vw;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
 // For Desktop
 
@@ -174,6 +199,10 @@ button,
 
 .feature-skill-box {
   font-size: 0.8em;
+}
+
+.footer-container {
+  font-size: 1em;
 }
 
 }
