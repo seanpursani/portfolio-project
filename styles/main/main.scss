@@ -31,7 +31,7 @@
 // Hero
 .hero {
   height: 75vh;
-  padding: 10px;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +53,7 @@
   p {
     font-size: 1.25em;
     color: $secondary;
-    margin: 16px 10px 16px 10px;
+    margin: 0.5em 0em 0.5em 0em;
   }
 
   button {
@@ -76,22 +76,33 @@
 .feature {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5em;
 }
 
+.tile-img,
 .feature-img {
   @include tile-img($secondary);
 }
 
+.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  width: 100%;
+  height: 100%
+}
+
 .feature-info {
   @include tile-info($primary);
+}
 
-  h3,
-  p {
-    color: $secondary;
-    margin: 0.5em 0;
-  }
+#feature-header {
+  font-size: 2em;
+}
+
+p {
+  color: $secondary;
+  margin: 0.5em 0;
 }
 
 .feature-footer {
@@ -113,12 +124,12 @@
   background-color: $back-shadow;
   color: $primary;
   padding: 0.5em 0.5em;
-  margin: 0.5em 0.5em 0.5em 0em;
+  margin: 0.5em 0.5em 0.5em 0;
 }
 
 .feature-links-container {
   display: flex;
-  gap: 6px;
+  gap: 0.5em;
   align-items: center;
 
   .feature-link {
@@ -167,6 +178,10 @@
 @media screen and (min-width: 768px) {
 // For Desktop
 
+.navbar {
+  justify-content: center;
+}
+
 button,
 .hero {
   font-size: large;
@@ -176,9 +191,10 @@ button,
   }
 }
 
-#feature-desktop-header {
-  margin-bottom: 2em;
+#feature-header {
   font-size: 2em;
+  margin-bottom: 0.5em;
+
 }
 
   
@@ -192,9 +208,14 @@ button,
 
 .feature {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   height: 70vh;
+  margin: 8em;
   font-size: larger;
+}
+
+.feature-img {
+  min-width: 4em;
 }
 
 .feature-skill-box {

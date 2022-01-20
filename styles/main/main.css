@@ -34,7 +34,7 @@ body {
 .header {
   border-bottom: 8px solid #071013;
   display: inline-block;
-  border-radius: 30%;
+  border-radius: 0.4em;
   margin-bottom: 10px;
   margin-top: 10px;
   color: #dbdbdb;
@@ -70,7 +70,7 @@ body {
 
 .hero {
   height: 75vh;
-  padding: 10px;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +102,7 @@ body {
 .hero p {
   font-size: 1.25em;
   color: #071013;
-  margin: 16px 10px 16px 10px;
+  margin: 0.5em 0em 0.5em 0em;
 }
 
 .hero button {
@@ -141,30 +141,42 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5em;
 }
 
+.tile-img,
 .feature-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#071013), to(rgba(21, 28, 39, 0)));
-  background-image: linear-gradient(180deg, #071013, rgba(21, 28, 39, 0));
-  border-radius: 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#071013), to(#07101333));
+  background-image: linear-gradient(180deg, #071013, #07101333);
+  -webkit-box-shadow: -0.5em 0.5em 1em #46565e;
+          box-shadow: -0.5em 0.5em 1em #46565e;
+  border-radius: 0.2em;
   min-height: 50vh;
-  padding: 20px 20px;
   text-align: left;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .feature-info {
   background-color: #dbdbdb;
-  -webkit-box-shadow: -2px 6px 8px #46565e;
-          box-shadow: -2px 6px 8px #46565e;
+  -webkit-box-shadow: 0em 1em 1em #46565e;
+          box-shadow: 0em 1em 1em #46565e;
   border-radius: 1px;
-  padding: 20px 20px;
+  padding: 1em 1em;
   text-align: left;
 }
 
-.feature-info h3,
-.feature-info p {
+#feature-header {
+  font-size: 2em;
+}
+
+p {
   color: #071013;
   margin: 0.5em 0;
 }
@@ -200,14 +212,14 @@ body {
   background-color: #46565e;
   color: #dbdbdb;
   padding: 0.5em 0.5em;
-  margin: 0.5em 0.5em 0.5em 0em;
+  margin: 0.5em 0.5em 0.5em 0;
 }
 
 .feature-links-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 6px;
+  gap: 0.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -234,7 +246,44 @@ body {
           flex-direction: column;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4em;
+}
+
+.footer-container {
+  border-radius: 0.2em;
+  gap: 1em;
+  color: #dbdbdb;
+  background-color: #071013;
+  width: 70vw;
+  padding: 1em;
+  font-size: 0.75em;
+}
+
+.footer-img {
+  width: 64vw;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
+  .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   button,
   .hero {
     font-size: large;
@@ -243,9 +292,9 @@ body {
   .hero h1 {
     height: 1.2em;
   }
-  #feature-desktop-header {
-    margin-bottom: 2em;
+  #feature-header {
     font-size: 2em;
+    margin-bottom: 0.5em;
   }
   .tile-grid {
     display: -ms-grid;
@@ -258,13 +307,20 @@ body {
   .feature {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
     height: 70vh;
+    margin: 8em;
     font-size: larger;
+  }
+  .feature-img {
+    min-width: 4em;
   }
   .feature-skill-box {
     font-size: 0.8em;
+  }
+  .footer-container {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
