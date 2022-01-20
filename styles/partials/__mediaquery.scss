@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+  // For Desktop
+
+  .navbar {
+    justify-content: center;
+  }
+
+  button,
+  .hero {
+    font-size: large;
+
+    h1 {
+      height: 1.2em;
+    }
+  }
+
+  #feature-header {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+  }
+
+  .tile-grid {
+    font-size: large;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 60vh;
+    margin: 0vw 10vw;
+    max-width: 70vw;
+    font-size: larger;
+  }
+
+  .feature-skill-box {
+    font-size: 0.8em;
+  }
+
+  .footer-container {
+    max-width: 34vw;
+  }
+
+  .footer-img {
+    max-width: 40vw;
+  }
+}

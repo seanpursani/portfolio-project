@@ -40,6 +40,52 @@ body {
   color: #dbdbdb;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  button,
+  .hero {
+    font-size: large;
+  }
+  button h1,
+  .hero h1 {
+    height: 1.2em;
+  }
+  #feature-header {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+  }
+  .tile-grid {
+    font-size: large;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+  }
+  .feature {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    height: 60vh;
+    margin: 0vw 10vw;
+    max-width: 70vw;
+    font-size: larger;
+  }
+  .feature-skill-box {
+    font-size: 0.8em;
+  }
+  .footer-container {
+    max-width: 34vw;
+  }
+  .footer-img {
+    max-width: 40vw;
+  }
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +135,7 @@ body {
 
 .hero h1 {
   font-size: 4em;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
   color: #dbdbdb;
 }
@@ -141,7 +187,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5em;
+  height: 100vh;
+  margin-bottom: 10vh;
 }
 
 .tile-img,
@@ -176,7 +223,7 @@ body {
   font-size: 2em;
 }
 
-p {
+.feature-txt {
   color: #071013;
   margin: 0.5em 0;
 }
@@ -264,63 +311,22 @@ p {
 }
 
 .footer-container {
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   gap: 1em;
   color: #dbdbdb;
   background-color: #071013;
-  width: 70vw;
+  width: 64vw;
   padding: 1em;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 .footer-img {
-  width: 64vw;
+  width: 70vw;
   height: auto;
+  border-radius: 1em;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  button,
-  .hero {
-    font-size: large;
-  }
-  button h1,
-  .hero h1 {
-    height: 1.2em;
-  }
-  #feature-header {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-  }
-  .tile-grid {
-    display: -ms-grid;
-    display: grid;
-    font-size: large;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 2vh;
-  }
-  .feature {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
-    height: 70vh;
-    margin: 8em;
-    font-size: larger;
-  }
-  .feature-img {
-    min-width: 4em;
-  }
-  .feature-skill-box {
-    font-size: 0.8em;
-  }
-  .footer-container {
-    font-size: 1em;
-  }
+.footer-about {
+  color: #dbdbdb;
 }
 /*# sourceMappingURL=main.css.map */

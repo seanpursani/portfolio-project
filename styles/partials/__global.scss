@@ -1,32 +1,28 @@
 // All Style
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
-  }
-  
-  // Body
-  body {
-    background-color: $background;
-    width: 96%;
-    margin: 2em auto;
-  }
-  
-  //Icons
-  .icons {
-    display: flex;
-    color: $secondary;
-    justify-content: center;
-    gap: 1em;
-  }
-  
-  //Secondary Header
-  .header {
-    @include underline;
-    color: $primary;
-  }
-  
-  
-  
-  
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+// Body
+body {
+  background-color: $background;
+  width: 96%;
+  margin: 2em auto;
+}
+
+//Icons
+.icons {
+  display: flex;
+  color: $secondary;
+  justify-content: center;
+  gap: 1em;
+}
+
+//Secondary Header
+.header {
+  @include underline;
+  color: $primary;
+}
