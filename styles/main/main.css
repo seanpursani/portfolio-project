@@ -46,6 +46,9 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    width: 92%;
+  }
   .navbar {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
