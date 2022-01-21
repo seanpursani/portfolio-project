@@ -34,10 +34,58 @@ body {
 .header {
   border-bottom: 8px solid #071013;
   display: inline-block;
-  border-radius: 30%;
+  border-radius: 0.4em;
   margin-bottom: 10px;
   margin-top: 10px;
   color: #dbdbdb;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 92%;
+  }
+  .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  button,
+  .hero {
+    font-size: large;
+  }
+  button h1,
+  .hero h1 {
+    height: 1.2em;
+  }
+  .tile-grid {
+    font-size: large;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+  }
+  .feature {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    margin: 0vw 20vw;
+    max-width: 70vw;
+    font-size: large;
+  }
+  .feature-skill-box {
+    font-size: 0.8em;
+  }
+  .footer-container {
+    max-width: 34vw;
+  }
+  .footer-img {
+    max-width: 40vw;
+  }
 }
 
 .navbar {
@@ -70,7 +118,7 @@ body {
 
 .hero {
   height: 75vh;
-  padding: 10px;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +137,7 @@ body {
 
 .hero h1 {
   font-size: 4em;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
   color: #dbdbdb;
 }
@@ -102,7 +150,7 @@ body {
 .hero p {
   font-size: 1.25em;
   color: #071013;
-  margin: 16px 10px 16px 10px;
+  margin: 0.5em 0em 0.5em 0em;
 }
 
 .hero button {
@@ -130,41 +178,48 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
 }
 
 .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
+  display: -ms-grid;
+  display: grid;
   margin-bottom: 10vh;
 }
 
+.tile-img,
 .feature-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#071013), to(rgba(21, 28, 39, 0)));
-  background-image: linear-gradient(180deg, #071013, rgba(21, 28, 39, 0));
-  border-radius: 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#071013), to(#07101333));
+  background-image: linear-gradient(180deg, #071013, #07101333);
+  -webkit-box-shadow: -0.5em 0.5em 1em #46565e;
+          box-shadow: -0.5em 0.5em 1em #46565e;
+  border-radius: 0.2em;
   min-height: 50vh;
-  padding: 20px 20px;
   text-align: left;
 }
 
+/*.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+} */
 .feature-info {
   background-color: #dbdbdb;
-  -webkit-box-shadow: -2px 6px 8px #46565e;
-          box-shadow: -2px 6px 8px #46565e;
+  -webkit-box-shadow: 0em 1em 1em #46565e;
+          box-shadow: 0em 1em 1em #46565e;
   border-radius: 1px;
-  padding: 20px 20px;
+  padding: 1em 1em;
   text-align: left;
 }
 
-.feature-info h3,
-.feature-info p {
+#feature-header {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.feature-txt {
   color: #071013;
   margin: 0.5em 0;
 }
@@ -200,14 +255,14 @@ body {
   background-color: #46565e;
   color: #dbdbdb;
   padding: 0.5em 0.5em;
-  margin: 0.5em 0.5em 0.5em 0em;
+  margin: 0.5em 0.5em 0.5em 0;
 }
 
 .feature-links-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 6px;
+  gap: 0.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -234,37 +289,40 @@ body {
           flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
-  button,
-  .hero {
-    font-size: large;
-  }
-  button h1,
-  .hero h1 {
-    height: 1.2em;
-  }
-  #feature-desktop-header {
-    margin-bottom: 2em;
-    font-size: 2em;
-  }
-  .tile-grid {
-    display: -ms-grid;
-    display: grid;
-    font-size: large;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 2vh;
-  }
-  .feature {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    height: 70vh;
-    font-size: larger;
-  }
-  .feature-skill-box {
-    font-size: 0.8em;
-  }
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4em;
+}
+
+.footer-container {
+  border-radius: 0.5em;
+  gap: 1em;
+  color: #dbdbdb;
+  background-color: #071013;
+  width: 64vw;
+  padding: 1em;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/*.footer-img {
+    width: 70vw;
+    height: auto;
+    border-radius: 1em;
+  } */
+.footer-about {
+  color: #dbdbdb;
 }
 /*# sourceMappingURL=main.css.map */

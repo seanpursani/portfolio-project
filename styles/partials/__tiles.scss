@@ -1,0 +1,78 @@
+// Feature Project Tile
+
+.feature {
+  display: grid;
+  margin-bottom: 10vh;
+}
+
+.tile-img,
+.feature-img {
+  @include tile-img($secondary);
+}
+
+/*.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+} */
+
+.feature-info {
+  @include tile-info($primary);
+}
+
+#feature-header {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.feature-txt {
+  color: $secondary;
+  margin: 0.5em 0;
+}
+
+.feature-footer {
+  margin: 0.5em 0;
+}
+
+.feature-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.feature-skill-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1em;
+  background-color: $back-shadow;
+  color: $primary;
+  padding: 0.5em 0.5em;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+.feature-links-container {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+
+  .feature-link {
+    text-decoration: none;
+    color: $secondary;
+  }
+}
+
+// Secondary Project Tiles in Portfolio
+
+.tile-grid {
+  display: grid;
+  gap: 2vh;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+}
