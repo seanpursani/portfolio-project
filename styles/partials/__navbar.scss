@@ -1,24 +1,19 @@
 // Navbar
-.navbar {
+.nav {
   display: flex;
   gap: 1em;
   margin: 0 1em;
-}
-
-.navlink {
+  
+  &__link {
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
   color: $primary;
+  }
 }
 
-.navlink:hover {
-  transition: 0.3s ease;
-  color: #b8b7b7;
-}
-
-.navlink:visited {
-  text-decoration: none;
-}
-
-
+.nav__link:hover {
+    transition: 0.3s ease;
+    color: #dbdbdb86;
+    text-decoration: none;
+  }

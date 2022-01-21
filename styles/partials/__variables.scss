@@ -51,6 +51,8 @@
 @mixin button {
   color: $secondary;
   background-color: $primary;
+  border: .2em solid $secondary;
+  border-radius: 0.2em;
   font-size: 1em;
   align-self: center;
   padding: 0.5em;
