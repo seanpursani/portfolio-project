@@ -1,9 +1,7 @@
 // Feature Project Tile
 
 .feature {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  display: grid;
   margin-bottom: 10vh;
 }
 
@@ -12,13 +10,13 @@
   @include tile-img($secondary);
 }
 
-.image {
+/*.image {
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
   width: 100%;
   height: 100%;
-}
+} */
 
 .feature-info {
   @include tile-info($primary);
@@ -26,6 +24,7 @@
 
 #feature-header {
   font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .feature-txt {

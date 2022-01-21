@@ -14,25 +14,18 @@
     }
   }
 
-  #feature-header {
-    font-size: 2em;
-    margin-bottom: 1.5em;
-    margin-top: 1em;
-  }
-
   .tile-grid {
     font-size: large;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2vh;
   }
 
   .feature {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    height: 60vh;
-    margin: 0vw 10vw;
+    grid-template-columns: 1.5fr 1fr;
+    margin: 0vw 20vw;
     max-width: 70vw;
-    font-size: larger;
+    font-size: large;
   }
 
   .feature-skill-box {
