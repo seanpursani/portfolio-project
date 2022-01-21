@@ -2,7 +2,7 @@
 
 .feature {
   display: grid;
-  margin-bottom: 5vh;
+  margin-bottom: 5em;
 }
 
 .tile-img,
@@ -75,4 +75,5 @@
 .tile {
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
