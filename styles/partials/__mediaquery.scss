@@ -2,9 +2,9 @@
   // For Desktop
 
   // Body
-body {
-  width: 92%;
-}
+  body {
+    width: 92%;
+  }
 
   .navbar {
     justify-content: center;
@@ -27,9 +27,9 @@ body {
   .feature {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: 
-    "image image image"
-    ". info .";
+    grid-template-areas:
+      "image image image"
+      ". info .";
     margin: 0vw 10vw;
   }
 
